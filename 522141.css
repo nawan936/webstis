@@ -143,6 +143,9 @@ th, td {
   cursor: pointer;
   font-size: 14px;
 }
+.ifrem {
+    margin-bottom: 50px;
+}
 
 .deskripsi {
     margin-bottom: 50px;
