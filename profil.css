@@ -1,0 +1,220 @@
+/* Reset dan Variabel */
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4cc9f0;
+    --text-color: #2b2d42;
+    --text-light: #8d99ae;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --border-color: #e9ecef;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1;
+    padding-top: 200px; /* Untuk navbar fixed */
+}
+
+/* Container utama */
+.container {
+  padding: 2rem 1rem;
+}
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Kartu Profil */
+
+.profil {
+    margin-top: 3rem;
+    border-radius: 20px;
+    background-color: #f0eded;
+    padding: 30px;
+    
+}
+.profile-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.back-arrow, .menu-dots {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.back-arrow:hover, .menu-dots:hover {
+    color: var(--primary-color);
+}
+
+/* Avatar */
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 8px rgba(67, 97, 238, 0.3);
+}
+
+/* Informasi Profil */
+.profile-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0 5px;
+    color: var(--text-color);
+}
+
+.profile-email {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+/* Opsi Profil */
+.profile-options {
+    background: var(--card-bg);
+    margin: 20px 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.profile-info h1,.profile-info p {
+    color: #2b2d42;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease;
+}
+
+.profile-link:hover {
+    background-color: rgba(67, 97, 238, 0.05);
+}
+
+.profile-link:last-child {
+    border-bottom: none;
+}
+
+/* Detail Profil */
+.profile-details {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-color);
+    color: #2b2d42;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item span:first-child {
+    color: #2b2d42;
+    font-weight: 500;
+}
+
+.detail-item span:last-child {
+    color: #2b2d42;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 0 15px;
+        margin: 15px auto;
+    }
+    
+    .profile-card {
+        padding: 20px;
+    }
+    
+    .profile-avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 28px;
+    }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+  margin-top: 20px;
+   box-shadow: var(--shadow);
+}
+
+@media (max-width: 480px) {
+    .profile-name {
+        font-size: 20px;
+    }
+    
+    .profile-email {
+        font-size: 14px;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .detail-item span:last-child {
+        text-align: left;
+    }
+}

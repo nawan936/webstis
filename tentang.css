@@ -1,0 +1,146 @@
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #3a0ca3;
+  --dark-color: #2b2d42;
+  --light-color: #f8f9fa;
+  --text-color: #495057;
+  --border-radius: 12px;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--text-color);
+  line-height: 1.7;
+  padding-top: 80px; /* Untuk navbar fixed */
+}
+
+.about-header {
+   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: var(--border-radius);
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    width: 90%;
+    margin-top: 6rem;
+}
+
+
+
+.about-header h1 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-header p {
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.about-content {
+  max-width: 1200px;
+}
+
+.about-section {
+  padding: 2rem 0;
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.section-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #2b2d42;
+}
+
+.card {
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mission-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.mission-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.mission-list li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+.contact-card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.contact-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.contact-section h2,
+.contact-section h4,
+.contact-section p {
+  color: #2b2d42;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-dark)
+  );
+  color: white;
+  margin-top: 20px;
+  box-shadow: var(--shadow);
+}
+
+

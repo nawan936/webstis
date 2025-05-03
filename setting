@@ -1,0 +1,57 @@
+<?php
+
+include "../koneksi.php";
+$sql = mysqli_query($konek, "SELECT * FROM user");
+$data = mysqli_fetch_assoc($sql);
+
+if (isset($_POST['edit'])) {
+    $nama = $_POST['nama'];
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = mysqli_query($konek, "UPDATE user SET nama = '$nama', username = '$username', email = '$email', password = '$password' WHERE no = '$data[no]'");
+
+    if ($sql) {
+        echo "<script>alert('Profil berhasil diubah'); window.location.href = 'profil.php?no=$data[no]';</script>";
+    }else{
+        echo "<script>alert('Profil gagal diubah'); window.location.href = 'profil.php';</script>";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profil</title>
+    <link rel="stylesheet" href="settings.css?v=1.1">
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+     <?php include 'nav.php'; ?>
+    <div class="profile-container">
+        <h2>Edit Profil</h2>
+        <p class="profile-info"> <strong>KG Media ID</strong><br>darfinstar22@gmail.com</p>
+
+        <form action="" method="POST">
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" placeholder="Masukkan nama lengkap" value="<?php echo $data['nama']; ?>">
+
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Masukkan Username" value="<?php echo $data['username']; ?>">
+
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Masukkan Email" value="<?php echo $data['email']; ?>">
+
+            <label>Ganti Password</label>
+            <input type="text" nama="password" placeholder="Masukkan Password Baru" value="<?php echo $data['password']; ?>">
+
+            <button type="submit" name="edit">Simpan</button>
+
+    </div>
+<?php include 'foter.php'; ?>
+ <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
