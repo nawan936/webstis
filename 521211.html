@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Kegiatan Mahasiswa - UNIDAYAN</title>
+    <meta name="description" content="Daftar Unit Kegiatan Mahasiswa di Universitas Dayanu Ikhsanuddin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="521211.css?v=1.2">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+     <nav class="navbar">
+    <div class="navbar-container container">
+        <!-- Brand Logo -->
+        <div href="beranda.php" class="navbar-brand">
+            <img src="Logo BPS.png" alt="Logo BPS" class="navbar-logo">
+            <span class="navbar-logo-text">PAKU BPS KABUPATEN BUTON UTARA</span>
+        </div>
+
+        <!-- Navbar Links -->
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="index.html"  class="navbar-link">Beranda</a></li> 
+            
+            <!-- Pedoman Dropdown -->
+            <li class="nav-dropdown">
+                <a href="#" class="navbarlink dropdown-toggle" id="pedomanDropdownBtn">
+                    Pedoman 
+                </a>
+                <ul class="dropdown-menu" id="pedomanDropdownMenu">
+                    <li><a href="kelengkapan.html" class="navbarlink"><i class="fas fa-file-alt"></i> Kelengkapan</a></li>
+                    <li><a href="panduan.html" class="navbarlink"><i class="fas fa-book"></i> Panduan</a></li>
+                </ul>
+            </li>
+            
+            <!-- Administrasi Dropdown -->
+            <li class="nav-dropdown">
+                <a href="#" class="navbarlink dropdown-toggle" id="adminDropdownBtn"  class="active " style="color: var(--text-color);
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.15);" >
+                    Administrasi 
+                </a>
+                <ul class="dropdown-menu" id="adminDropdownMenu">
+                    <li><a href="521211.html" class="navbarlink" style=" background: var(--dropdown-hover); color: var(--primary-color);">521211</a></li>
+                    <li><a href="521213.html" class="navbarlink">521213</a></li>
+                    <li><a href="521219.html" class="navbarlink">521219</a></li>
+                    <li><a href="521811.html" class="navbarlink ">521811</a></li>
+                    <li><a href="522141.html" class="navbarlink ">522141</a></li>
+                    <li><a href="522151.html" class="navbarlink ">522151</a></li>
+                    <li><a href="524111.html" class="navbarlink ">524111</a></li>
+                    <li><a href="524113.html" class="navbarlink ">524113</a></li>
+                    <li><a href="524114.html" class="navbarlink ">524114</a></li>
+                    <li><a href="524119.html" class="navbarlink ">524119</a></li>
+                    
+                </ul>
+            </li>
+
+      
+
+<!-- Keuangan Dropdown -->
+<li class="nav-dropdown">
+    <a href="#" class="navbarlink dropdown-toggle" id="keuanganDropdownBtn">
+        Keuangan 
+    </a>
+    <ul class="dropdown-menu" id="keuanganDropdownMenu"> <!-- ID diubah -->
+        <li><a href="spby.html" class="navbarlink ">SPBY 2024</a></li>
+        <li><a href="matrikshonor.html" class="navbarlink ">Matriks Honor Mitra</a></li>
+        <li><a href="tahunanggaran.html" class="navbarlink "> Tahun Anggaran 2024</a></li>
+    </ul>
+</li>
+<!-- Keuangan Dropdown -->
+
+    <!-- Naskah Dinas Dropdown -->
+ <li><a href="administrasi.html" class="navbar-link">Naskah Dinas</a></li>
+ <!-- Naskah Dinas Dropdown -->
+
+    <!-- kegiatan dropdown -->
+     <li><a href="kegiatan.html" class="navbar-link ">Kegiatan</a></li>
+ <!-- kegiatan dropdown -->
+
+           
+
+            <!-- Profile Dropdown -->
+            <li class="nav-dropdown profile-dropdown">
+                <button class="profile-button" onclick="toggleDropdown()">
+                    <i class="fas fa-user-circle"></i> Profil
+                </button>
+                <div id="profileDropdown" class="dropdown-menu profile-menu">
+                    <a href="profil.html" class="dropdown-item">
+                        <i class="fas fa-user"></i> Profil Saya
+                    </a>
+                    <a href="settings.html" class="dropdown-item">
+                        <i class="fas fa-cog"></i> Pengaturan
+                    </a>
+                    <a href="tentang.html" class="dropdown-item">
+                        <i class="fa-solid fa-address-book"></i> Kontak
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="" class="dropdown-item text-danger">
+                        <i class="fas fa-sign-out-alt"></i> Keluar
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggle" id="mobile-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</nav>
+
+    <main class="org-container">
+        <!-- Hero Section -->
+        <section class="org-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">521211</h1>
+                   <p>Digunakan untuk mencatat pengeluaran yang digunakan untuk pembayaran biaya bahan pendukung kegiatan (yang habis pakai) seperti konsumsi/bahan makanan, dokumentasi, spanduk dan biaya fotokopi yang diperlukan dalam pelaksanaan kegiatan non operasional seperti pameran, seminar, sosialisasi, rapat, diseminasi, dll yang terkait langsung dengan output suatu kegiatan dan tidak menghasilkan barang persediaan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organization Cards -->
+        <section class="org-cards-section">
+            <div class="container">
+                <div class="row g-4">
+                   
+                    <div class="col-lg-4 col-md-6">
+                        <div class="org-card">
+                            
+                            <div class="org-body">
+                                <h3 class="org-title">Belanja Konsumsi Rapat</h3>
+                                <p class="org-description">Untuk lebih jelasnya dari belanja konsumsi rapat, bisa cek versi lengkap disini, ya!</p>
+                                <a href="konsumsi.html" class="btn btn-primary">
+                                    <i class="fas fa-arrow-right me-2"></i>Selengkapnya
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="org-card">
+                           
+                            <div class="org-body">
+                                <h3 class="org-title">Belanja Perlegkapan Pakaian Habis</h3>
+                                <p class="org-description">Untuk lebih jelasnya dari belanja perlengkapan pakaian, bisa cek versi lengkap disini, ya! </p>
+                                <a href="perlengkapan.html" class="btn btn-primary">
+                                    <i class="fas fa-arrow-right me-2"></i>Selengkapnya
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="org-card">
+                           
+                            <div class="org-body">
+                                <h3 class="org-title">Belanja Pengadaan/Pencetakan</h3>
+                                <p class="org-description">Untuk lebih jelasnya dari belanja pengadaan/percetakan, bisa cek versi lengkap disini, ya! </p>
+                                <a href="pengadaan.html" class="btn btn-primary">
+                                    <i class="fas fa-arrow-right me-2"></i>Selengkapnya
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="org-card">
+                            
+                            <div class="org-body">
+                                <h3 class="org-title">Belanja Pulsa Paket/Data Internet</h3>
+                                <p class="org-description">Untuk lebih jelasnya dari belanja pulsa paket/data internet, bisa cek versi lengkap disini, ya! </p>
+                                <a href="pulsa.html" class="btn btn-primary">
+                                    <i class="fas fa-arrow-right me-2"></i>Selengkapnya
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Footer -->
+    <footer class="footer" id="contact">
+        <p>&copy; 2025 Badan Pusat Statistik. Semua Hak Dilindungi.</p>
+    </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+     <script>
+  const menuToggle = document.getElementById('mobile-menu');
+const mobileMenu = document.getElementById('navbar-toggle');
+
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+  navbarLinks.classList.toggle('active');
+  document.body.classList.toggle('navbar-active');
+  
+  // Tambahkan ini untuk mengatasi jump scroll
+  if (document.body.classList.contains('navbar-active')) {
+    document.body.style.top = `-${window.scrollY}px`;
+  } else {
+    const scrollY = document.body.style.top;
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const mobileMenuButton = document.getElementById('mobile-menu');
+  const navbarLinks = document.getElementById('navbar-links');
+  const profileButton = document.querySelector('.profile-button');
+  const profileDropdown = document.getElementById('profileDropdown');
+  
+  // Mobile menu toggle
+  mobileMenuButton.addEventListener('click', function(e) {
+    e.stopPropagation();
+    this.classList.toggle('active');
+    navbarLinks.classList.toggle('active');
+  });
+
+  // Fungsi untuk menutup semua dropdown
+  function closeAllDropdowns() {
+    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+      menu.classList.remove('show');
+    });
+  }
+
+  // Setup dropdown
+  function setupDropdown(buttonId, menuId) {
+    const button = document.getElementById(buttonId);
+    const menu = document.getElementById(menuId);
+    
+    if (button && menu) {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const isOpen = menu.classList.contains('show');
+        closeAllDropdowns(); // Tutup semua dropdown dulu
+        if (!isOpen) {
+          menu.classList.add('show'); // Hanya buka yang diklik
+        }
+      });
+    }
+  }
+
+  // Apply setup to each dropdown
+  setupDropdown('pedomanDropdownBtn', 'pedomanDropdownMenu');
+  setupDropdown('adminDropdownBtn', 'adminDropdownMenu');
+  setupDropdown('keuanganDropdownBtn', 'keuanganDropdownMenu');
+
+  // Setup khusus untuk Profil
+  if (profileButton && profileDropdown) {
+    profileButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const isOpen = profileDropdown.classList.contains('show');
+      closeAllDropdowns(); // Tutup semua dropdown
+      if (!isOpen) {
+        profileDropdown.classList.add('show');
+      }
+    });
+  }
+
+  // Klik di luar akan menutup semua dropdown
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.nav-dropdown') && !event.target.closest('.profile-dropdown')) {
+      closeAllDropdowns();
+    }
+    // Tutup mobile menu jika klik di luar navbar
+    if (!event.target.closest('.navbar-container')) {
+      navbarLinks.classList.remove('active');
+      mobileMenuButton.classList.remove('active');
+    }
+  });
+
+  // Tutup dropdown kalau item di dalam profile diklik
+  const dropdownItems = document.querySelectorAll('.profile-menu .dropdown-item');
+  dropdownItems.forEach(item => {
+    item.addEventListener('click', function() {
+      closeAllDropdowns();
+    });
+  });
+
+  // Tutup dropdown dengan tombol Escape
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      closeAllDropdowns();
+    }
+  });
+
+  // Tutup mobile menu saat link diklik
+  const navLinks = document.querySelectorAll('.navbar-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navbarLinks.classList.remove('active');
+      mobileMenuButton.classList.remove('active');
+    });
+  });
+});
+</script>
+</body>
+</html>
